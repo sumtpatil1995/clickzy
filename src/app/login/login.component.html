@@ -1,0 +1,44 @@
+<canvas class="background">
+</canvas>
+<mat-card class="max-wid">
+    <mat-card-header>
+        <mat-card-title>Clickzy</mat-card-title>
+        <mat-card-title>Welcome! Please login to your account</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <input placeholder="Password" matInput [type]="hide ? 'password' : 'text'" required>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <div class="row rem-me">
+                <div class="col">
+                    <mat-checkbox>Remember me</mat-checkbox>
+                </div>
+                <div class="col"><a class="fp-link" href="">Forgot password</a></div>
+            </div>
+        </form>
+        <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    </mat-card-content>
+    <mat-card-actions>
+        <div class="row">
+            <button mat-raised-button (click)="login()" color="primary"><i class="material-icons">
+                    trending_up
+                </i>Login</button>
+            <button mat-raised-button (click)="login()" color="primary"><i class="material-icons">
+                    trending_up
+                </i>Sign Up</button>
+        </div>
+    </mat-card-actions>
+    <mat-card-actions>
+        <div class="row">
+            <button mat-raised-button (click)="login()" color="primary">Google</button>
+        </div>
+    </mat-card-actions>
+</mat-card>

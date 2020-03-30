@@ -1,0 +1,13 @@
+.max-wid{ margin: auto; max-width: 380px; text-align: center; margin-top: 5rem; background: transparent;
+    color: #a5a5a5;}
+.mat-form-field {width: 90%; } 
+.mat-focused .mat-form-field-label {
+    color: green !important;
+    font-size: 20px;
+}
+.material-icons{padding-right: 1rem;}
+.mat-raised-button {margin: 0 20px!important;}
+.fp-link{color: #a5a5a5;}
+.rem-me{display: inline-flex;}
+.rem-me .col{margin-right: 20px;}
+.row{justify-content: center;}

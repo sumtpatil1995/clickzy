@@ -1,0 +1,37 @@
+.mat-toolbar.mat-primary {
+    background: #2d2d2d;
+    color: #a9a9a9;
+}
+.nav-menu-prim{ margin: auto;}
+.nav-menu-sec{margin: auto;}
+.nav-sec-row{margin: 0 32px!important;}
+.mat-drawer-side {
+    border-right: none !important;
+}
+
+.mat-drawer-inner-container{margin: 1rem; background: #303030;}
+.mat-list-base {
+    padding-top: 8px;
+    display: inline-grid !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    margin: 10px;
+    background: #282a2a;
+}
+
+.nav-list{
+    margin: 1rem;}
+
+.mat-nav-bg{ background: #303030;}
+.tp-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }
+ .material-icons {
+    font-size: 18px;
+}

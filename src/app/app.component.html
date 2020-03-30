@@ -1,0 +1,5 @@
+<app-toolbar [showNav]="showNav"></app-toolbar>
+
+<div *ngIf="!showNav" class="container">
+    <router-outlet></router-outlet>
+</div>
