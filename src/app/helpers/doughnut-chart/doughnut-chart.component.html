@@ -1,29 +1,32 @@
-<mat-grid-list cols="3">
-    <mat-grid-tile>
-        <mat-card>
-            <div class="chart-wrapper">
-                <canvas baseChart  [colors]="doughnutChartColors" [data]="doughnutChartData" [labels]="doughnutChartLabels"
-                    [chartType]="doughnutChartType">
-                </canvas>
-            </div>
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card>
-            <div class="chart-wrapper">
-                <canvas baseChart  [colors]="doughnutChartColors" [data]="doughnutChartData" [labels]="doughnutChartLabels"
-                    [chartType]="doughnutChartType">
-                </canvas>
-            </div>
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card>
-            <div class="chart-wrapper">
-                <canvas baseChart  [colors]="doughnutChartColors" [data]="doughnutChartData" [labels]="doughnutChartLabels"
-                    [chartType]="doughnutChartType">
-                </canvas>
-            </div>
-        </mat-card>
-    </mat-grid-tile>
-</mat-grid-list>
+<div class="row mg-row">
+    <div class="col">
+        <fusioncharts
+  [width]="width"
+  [height]="height"
+  [type]="type"
+  [dataFormat]="dataFormat"
+  [dataSource]="dataSource"
+>
+</fusioncharts>
+    </div>
+    <div class="col">
+        <fusioncharts
+        [width]="width"
+        [height]="height"
+        [type]="type"
+        [dataFormat]="dataFormat"
+        [dataSource]="dataSource"
+      >
+      </fusioncharts>
+    </div>
+    <div class="col">
+        <fusioncharts
+        [width]="width"
+        [height]="height"
+        [type]="type"
+        [dataFormat]="dataFormat"
+        [dataSource]="dataSource"
+      >
+      </fusioncharts>
+    </div>
+</div>

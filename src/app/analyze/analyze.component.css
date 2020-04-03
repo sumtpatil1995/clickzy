@@ -1,0 +1,10 @@
+.report-container{margin: auto;}
+.inner-sectipn{margin: 1rem; border: 2px solid gray;
+    padding: 1rem;}
+.align-dc{justify-content: center;}
+.clicks-vs-conv-div{margin: 2rem;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 1rem;
+    border-radius: 5px;
+}

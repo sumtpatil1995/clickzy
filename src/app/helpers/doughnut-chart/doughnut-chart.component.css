@@ -1,0 +1,8 @@
+.border-btm{border-bottom: 1px solid gray;}
+.mat-card:not([class*=mat-elevation-z]) {
+    border: 1px solid gray !important;
+}
+.mg-row{margin:0.5rem;}
+/* .col{border: 1px solid gray;margin: 1rem;
+    border-radius: 5px;
+    padding: 1rem;} */
