@@ -11,6 +11,7 @@ import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.componen
 import { BarChartsComponent } from './bar-charts/bar-charts.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
+import { NgxEchartsModule } from 'ngx-echarts';
 
 // Import FusionCharts library and chart modules
 import * as FusionCharts from "fusioncharts";
@@ -18,6 +19,7 @@ import * as charts from "fusioncharts/fusioncharts.charts";
 import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 import { AccountListComponent } from './account-list/account-list.component';
 import { ClicksVsConversionComponent } from './clicks-vs-conversion/clicks-vs-conversion.component';
+import { SectionFiveComponent } from './section-five/section-five.component';
 
 FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
 @NgModule({
@@ -27,7 +29,8 @@ FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
          RouterModule,
          ChartsModule,
          FusionChartsModule,
-         NgxChartsModule
+         NgxChartsModule,
+         NgxEchartsModule
      ],
     declarations: [
         ToolbarComponent,
@@ -35,10 +38,11 @@ FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
         DoughnutChartComponent,
         BarChartsComponent,
         AccountListComponent,
-        ClicksVsConversionComponent
+        ClicksVsConversionComponent,
+        SectionFiveComponent
     ],
     exports: [
         ToolbarComponent ,DoughnutChartComponent,BarChartsComponent, AccountListComponent,
-        ClicksVsConversionComponent   ]
+        ClicksVsConversionComponent, SectionFiveComponent  ]
 })
 export class HelpersModule {}

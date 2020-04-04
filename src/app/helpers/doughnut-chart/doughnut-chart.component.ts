@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ChartType } from 'chart.js';
 import { MultiDataSet, Label} from 'ng2-charts';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { EChartOption } from 'echarts';
+import * as echarts from 'echarts/lib/echarts'
+
 declare var CanvasJS: any;
 const data = {
   chart: {
@@ -44,6 +47,52 @@ export class DoughnutChartComponent implements OnInit {
   type = "doughnut2d";
   dataFormat = "json";
   dataSource = data;
+  colours = ['#BFD8C4','#00BE29'];
+  option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 10,
+        textStyle: {
+          color: 'gray'
+        },
+      /*   data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎'] */
+    },
+    series: [
+        {
+            name: 'Click',
+            type: 'pie',
+            radius: ['55%', '70%'],
+            avoidLabelOverlap: false,
+            textStyle: {
+              color: 'white'
+            },
+            color:this.colours,
+            label: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '30',
+                    fontWeight: 'bold'
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 335, name: 'data 1'},
+                {value: 310, name: 'data 2'},
+            ]
+        }
+    ]
+};
+
   
   constructor() { }
 
