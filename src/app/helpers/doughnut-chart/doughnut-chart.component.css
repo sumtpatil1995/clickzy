@@ -2,11 +2,12 @@
 .mat-card:not([class*=mat-elevation-z]) {
     border: 1px solid gray !important;
 }
-.mg-row{margin:0.5rem;}
+.mg-row{margin:0.5rem; max-height: 245px;}
 /* .col{border: 1px solid gray;margin: 1rem;
     border-radius: 5px;
     padding: 1rem;} */
 
-    .demo-chart {
-        height: 400px;
-      }
+.col{max-height: 245px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0.5rem;}

@@ -8,6 +8,8 @@ body {
   margin: 0;
   padding: 0;
   background: #2b2d2d;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
 }
 
 .background {

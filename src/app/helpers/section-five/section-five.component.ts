@@ -12,6 +12,8 @@ export class SectionFiveComponent implements OnInit {
         trigger: 'item',
         formatter: '{a} <br/>{b}: {c} ({d}%)'
     },
+    width: 200,
+    height: 250,
     legend: {
       orient: 'vertical',
       bottom: 10,

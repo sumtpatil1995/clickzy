@@ -127,8 +127,8 @@ option = {
         data:['2015 降水量', '2016 降水量']
     },
     grid: {
-        top: 70,
-        bottom: 50
+      top: 70,
+      bottom: 70
     },
     xAxis: [
         {

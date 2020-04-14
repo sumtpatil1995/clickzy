@@ -42,8 +42,8 @@ const data = {
   styleUrls: ['./doughnut-chart.component.css']
 })
 export class DoughnutChartComponent implements OnInit {
-  width = 300;
-  height = 300;
+  width = 240;
+  height = 290;
   type = "doughnut2d";
   dataFormat = "json";
   dataSource = data;
@@ -53,6 +53,8 @@ export class DoughnutChartComponent implements OnInit {
         trigger: 'item',
         formatter: '{a} <br/>{b}: {c} ({d}%)'
     },
+    width: 190,
+    height: 240,
     legend: {
         orient: 'vertical',
         left: 10,

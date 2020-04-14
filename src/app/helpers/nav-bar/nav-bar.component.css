@@ -5,3 +5,7 @@
 .nav-border{
     border-bottom: 1px solid gray;
 }
+li{padding: 0 1rem 0 1rem;}
+.li-border-right{border-right: 2px solid #d0cbcb;}
+.brd-btm-nav{border-bottom: 1px solid gray;}
+.ng-mat-icon{color: #f7f7f7}

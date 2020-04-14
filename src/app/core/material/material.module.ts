@@ -5,7 +5,7 @@ import {
   MatButtonModule, MatCardModule, MatDialogModule, MatInputModule, MatTableModule,
   MatToolbarModule, MatMenuModule,MatIconModule, MatProgressSpinnerModule,
   MatCheckboxModule,
-   MatSidenavModule, MatListModule , MatGridListModule
+   MatSidenavModule, MatListModule , MatGridListModule,MatBadgeModule
 } from '@angular/material';
 
 
@@ -24,7 +24,8 @@ import {
     MatProgressSpinnerModule,
     MatCheckboxModule,
     MatSidenavModule, MatListModule ,
-    MatGridListModule
+    MatGridListModule,
+    MatBadgeModule
     ],
     exports: [
     CommonModule,
@@ -39,7 +40,8 @@ import {
      MatProgressSpinnerModule,
      MatCheckboxModule,
      MatSidenavModule, MatListModule ,
-     MatGridListModule
+     MatGridListModule,
+     MatBadgeModule
      ],
 })
 export class MaterialModule { }

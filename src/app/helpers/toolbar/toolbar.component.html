@@ -1,16 +1,38 @@
 <div *ngIf="showNav">
   <app-nav-bar></app-nav-bar>
   <mat-sidenav-container class="mat-elevation-z6 tp-containe">
-    <mat-sidenav #sidenav opened="true" role="navigation"  mode="side" class="mat-nav-bg">
-      <mat-action-list class="nav-list">
-        <button mat-raised-button [routerLink]="'/accounts'"><mat-icon>trending_up</mat-icon> Analyze </button>
-        <button mat-raised-button [routerLink]="'/create-account'"><mat-icon>build</mat-icon> Manage </button>
-        <button mat-raised-button [routerLink]="'/contacts'"><mat-icon>add</mat-icon> Create </button>
-        <button mat-raised-button [routerLink]="'/create-contact'"><mat-icon>supervised_user_circle</mat-icon> Collaborate </button>
-        <button mat-raised-button [routerLink]="'/activities'"><mat-icon>perm_identity</mat-icon> Profile </button>
-        <button mat-raised-button [routerLink]="'/accounts'"><mat-icon>settings</mat-icon> Setting </button>
-        <button mat-raised-button [routerLink]="'/create-account'"><mat-icon>contact_support</mat-icon> Support </button>
-        <button mat-raised-button [routerLink]="'/contacts'"><mat-icon>power_settings_new</mat-icon> Logout </button>
+    <mat-sidenav
+      #sidenav
+      opened="true"
+      role="navigation"
+      mode="side"
+      class="mat-nav-bg"
+    >
+      <mat-action-list class="nav-list ">
+          <button mat-raised-button [routerLink]="'/accounts'">
+            <mat-icon>trending_up</mat-icon> Analyze
+          </button>
+          <button mat-raised-button [routerLink]="'/create-account'">
+            <mat-icon>build</mat-icon> Manage
+          </button>
+          <button mat-raised-button [routerLink]="'/contacts'">
+            <mat-icon>add</mat-icon> Create
+          </button>
+          <button class="list-1" mat-raised-button [routerLink]="'/create-contact'">
+            <mat-icon>supervised_user_circle</mat-icon> Collaborate
+          </button>
+        <button class="list-2" mat-raised-button [routerLink]="'/activities'">
+          <mat-icon>perm_identity</mat-icon> Profile
+        </button>
+        <button mat-raised-button [routerLink]="'/accounts'">
+          <mat-icon>settings</mat-icon> Setting
+        </button>
+        <button mat-raised-button [routerLink]="'/create-account'">
+          <mat-icon>contact_support</mat-icon> Support
+        </button>
+        <button mat-raised-button [routerLink]="'/contacts'">
+          <mat-icon>power_settings_new</mat-icon> Logout
+        </button>
       </mat-action-list>
     </mat-sidenav>
     <mat-sidenav-content role="main">
@@ -20,4 +42,3 @@
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
-
